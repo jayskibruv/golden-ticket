@@ -1,0 +1,134 @@
+body {
+  background-color: #5b25b2;
+}
+
+/* form starting stylings ------------------------------- */
+.group 			  {
+  position:relative;
+  margin-bottom:45px;
+  display:inline-block;
+}
+input 				{
+  font-size:12px;
+  padding:10px 10px 10px 5px;
+  display:inline-block;
+  width:200px;
+  background:transparent;
+  color:#fff;
+  border:none;
+  border-bottom:1px solid #ffffff;
+  -webkit-box-shadow: 0 0 0px 1000px rgba(0,0,0,.1) inset;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+input:focus 		{ outline:none; }
+
+/* LABEL ======================================= */
+label 				 {
+  color:#ffffff;
+  font-size:12px;
+  font-weight:normal;
+  position:absolute;
+  background:transparent;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label 		{
+  top:-20px;
+  font-size:14px;
+  color:#ffffff;
+}
+
+/* BOTTOM BARS ================================= */
+.bar 	{ position:relative; display:block; width:200px; }
+.bar:before, .bar:after 	{
+  content:'';
+  height:2px;
+  width:0;
+  bottom:1px;
+  position:absolute;
+  background:#ffffff;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%;
+}
+
+.buttons{
+  opacity:0.5;
+  transition: opacity .25s ease-in-out;
+-moz-transition: opacity .25s ease-in-out;
+-webkit-transition: opacity .25s ease-in-out;
+}
+
+.buttons:hover{
+  opacity:1.0;
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%;
+  width:100px;
+  top:25%;
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+.winner{
+  background:#ffde00;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size:1.5em;
+}
+
+#ticket-submit{
+  font-family:Helvetica;
+  text-align:center;
+  margin-top:5%;
+}
+
+#submit-ticket{
+  background:none;
+  border:0;
+}
+
+#form-control{
+
+  margin:0 auto;
+  display:block;
+}
+
+#entrants{
+  font-family:Helvetica;
+}

@@ -1,0 +1,58 @@
+<html>
+<head>
+  <title>WONKA</title>
+  <link rel="stylesheet" type="text/css" href="wonka.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+</head>
+
+  <body>
+
+    <center>
+      <img src="assets/images/golden_ticket.png">
+    </center>
+
+    <form id="ticket-submit">
+
+        <div class="group">
+          <input type="text" id="entrant_name" required>
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>Your Name</label>
+        </div>
+
+        <div class="group">
+          <input type="text" id="entrant_age" required>
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>Your Age</label>
+        </div>
+
+         <div class="group">
+          <input type="text" id="guest_name" required>
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>Guest Name</label>
+        </div>
+
+    </form>
+
+    <table id="form-control" align="center">
+      <center>
+      <button id="submit-ticket"><img src="assets/images/submit_ticket.png" height="75px"></button>
+    </center>
+    </table>
+<br>
+<br>
+    <table id="entrants" align="center">
+      <tr id="r0">
+        <th><img src="assets/images/entrant_name.png"></th>
+        <th><img src="assets/images/entrant_age.png"></th>
+        <th><img src="assets/images/guest_name.png"></th>
+      </tr>
+    </table>
+
+    <script type="text/javascript" src="wonkascript.js"></script>
+
+  </body>
+
+</html>
